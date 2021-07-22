@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -19,6 +18,7 @@ body{
     font-weight: 400;
     background-repeat: no-repeat;
     text-decoration: none;
+    color: rgb(226, 226, 226);
 
 }
 
@@ -28,21 +28,20 @@ body{
     margin-bottom: 1.25rem;
 }
 .name{
-    font-family: 'Kalam', cursive;
-    font-weight: 700;
+    font-weight: 600;
+    /* color: #ffffff; */
 }
 .container{
     margin-bottom: 1.25em;
 }
 h2{
    font-size: 0.7rem;
-   font-weight: 400;
-   letter-spacing: 2px; 
+   font-weight: 500;
 }
 
 .focus{
-    font-family: 'Kalam', cursive;
-    font-weight: 700;
+    font-weight: 600;
+    /* color: #ffffff; */
 }
 
 @media all and (min-width: 700px) { 

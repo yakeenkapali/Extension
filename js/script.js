@@ -41,25 +41,26 @@ function setBgGreet(){
         document.body.style.backgroundImage = "url('../imgs/morning.jpg')";
         document.body.style.backgroundSize = "100%";
         greeting.textContent = 'Good Morning,';
+        document.body.style.color = 'black';
     }
     else if(hour < 18){
         //afternoon
         document.body.style.backgroundImage = "url('../imgs/afternoon.jpg')";
         document.body.style.backgroundSize = "100%";
-        greeting.textContent = 'Good Afetrnoon,';
+        greeting.textContent = 'Good Afternoon,';
     }
     else {
         //evening
         document.body.style.backgroundImage = "url('../imgs/afternoon.jpg')" ;
         document.body.style.backgroundSize = "100%";
         greeting.textContent = 'Good Evening,';
-        document.body.style.color = 'white';
+        // document.body.style.color = '#3F3F3F';
     }
 }
 
 //get name
 function getName(){
-    if(localStorage.getItem('name') === null){
+    if(localStorage.getItem('name') === null || ''){
         name.textContent = '[Enter Name]';
     }
     else{
@@ -84,7 +85,7 @@ function setName(e){
 //get focus
 function getFocus(){
     if(localStorage.getItem('focus') === null){
-        focus.textContent = '[Enter your todays focus]';
+        focus.textContent = '[Enter your focus for today]';
     }
     // else if(localStorage.getItem('focus') === 'love'){
     //     displayImg();
